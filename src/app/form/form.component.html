@@ -1,0 +1,5 @@
+<ng-container *ngFor='let data of metaData'>
+<ng-container *ngIf="data.type=='C' ">
+    <ng-container *ngTemplateOutlet='calendarTemp; context: { $implicit: data}' ></ng-container>
+</ng-container>
+</ng-container>
